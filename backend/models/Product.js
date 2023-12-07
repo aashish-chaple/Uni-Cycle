@@ -9,15 +9,11 @@ const productSchema = mongoose.Schema({
     type: String,
     required: true,
   },
-  indication: {
+  description: {
     type: String,
     required: true,
   },
-  dosage: {
-    type: String,
-    required: true,
-  },
-  sideEffects: {
+  location: {
     type: String,
     required: true,
   },
@@ -29,11 +25,10 @@ const productSchema = mongoose.Schema({
     type: String,
     required: true,
   },
-  countInStock: {
+  quantity: {
     type: Number,
     required: true,
-  }
- 
+  } 
 });
 
 const Product = mongoose.model("product", productSchema);

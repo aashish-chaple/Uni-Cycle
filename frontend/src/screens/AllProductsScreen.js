@@ -7,7 +7,7 @@ function AllProductsScreen() {
     return (
         <div className="homescreen">
             <div className="container text-center">
-                <h1 className="mt-3">Products</h1>
+                <h1 className="mt-3">Categories</h1>
                 <hr className="w-25 mx-auto" />
             </div>
             <div className="homescreen__products">

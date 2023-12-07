@@ -11,7 +11,7 @@ import Product from "../components/Product";
 //Actions
 import { getProducts as listProducts } from "../redux/actions/productActions";
 
-function WomensCareScreen() {
+function KitchenScreen() {
   
   const dispatch = useDispatch();
 
@@ -25,7 +25,7 @@ function WomensCareScreen() {
         <div>
       <div className="homescreen">
         <div className="container text-center">
-          <h1 className="mt-3">{allProductsData[5].title}</h1>
+          <h1 className="mt-3">{allProductsData[4].title}</h1>
           <hr className="w-25 mx-auto" />
         </div>
         <div className="homescreen__products">
@@ -34,7 +34,7 @@ function WomensCareScreen() {
         ) : error ? (
           <h2>{error}</h2>
         ) : (
-          products.map((product) => product.category === "Women's Care" && (
+          products.map((product) => product.category === "Kitchen" && (
             <Product
               key={product._id}
               imgsrc={product.imgsrc}
@@ -54,4 +54,4 @@ function WomensCareScreen() {
     )
 }
 
-export default WomensCareScreen
+export default KitchenScreen

@@ -4,15 +4,14 @@ import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 
 
-
 // Components
 import Product from "../components/Product";
 
 //Actions
 import { getProducts as listProducts } from "../redux/actions/productActions";
 
-function StaticScreen({setid}) {
 
+function ClothingScreen() {
   const dispatch = useDispatch();
 
   const getProducts = useSelector((state) => state.getProducts);
@@ -26,7 +25,7 @@ function StaticScreen({setid}) {
     <div>
       <div className="homescreen">
         <div className="container text-center">
-          <h1 className="mt-3">{allProductsData[0].title}</h1>
+          <h1 className="mt-3">{allProductsData[1].title}</h1>
           <hr className="w-25 mx-auto" />
         </div>
         <div className="homescreen__products">
@@ -35,27 +34,24 @@ function StaticScreen({setid}) {
           ) : error ? (
             <h2>{error}</h2>
           ) : (
-            products.map((product) => product.category === "Dermatology" && (
+            products.map((product) => product.category === "Clothing" && (
               <Product
                 key={product._id}
                 imgsrc={product.imgsrc}
                 title={product.title}
-                indication={product.indication.length > 100 ? product.indication.slice(0, 100) + "..." : product.indication}
-                dosage={product.dosage.length > 50 ? product.dosage.slice(0, 50) + "..." : product.dosage}
-                sideEffects={product.sideEffects.length > 50 ? product.sideEffects.slice(0, 50) + "..." : product.sideEffects}
+                description={product.description}
+                // dosage={product.dosage}
+                // sideEffects={product.sideEffects}
                 price={product.price}
                 productId={product._id}
-                setid={setid}
               />
             )
             )
-            
           )}
         </div>
       </div>
     </div>
   )
-  
 }
 
-export default StaticScreen
+export default ClothingScreen

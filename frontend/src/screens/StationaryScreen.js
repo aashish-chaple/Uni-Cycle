@@ -12,7 +12,7 @@ import Product from "../components/Product";
 import { getProducts as listProducts } from "../redux/actions/productActions";
 
 
-function DentalScreen() {
+function StationaryScreen() {
 
     const dispatch = useDispatch();
 
@@ -36,14 +36,14 @@ function DentalScreen() {
                     ) : error ? (
                         <h2>{error}</h2>
                     ) : (
-                        products.map((product) => product.category === "Dental" && (
+                        products.map((product) => product.category === "Stationary" && (
                             <Product
                                 key={product._id}
                                 imgsrc={product.imgsrc}
                                 title={product.title}
-                                indication={product.indication}
-                                dosage={product.dosage}
-                                sideEffects={product.sideEffects}
+                                description={product.description}
+                                // dosage={product.dosage}
+                                // sideEffects={product.sideEffects}
                                 price={product.price}
                                 productId={product._id}
                             />
@@ -56,4 +56,4 @@ function DentalScreen() {
     )
 }
 
-export default DentalScreen
+export default StationaryScreen

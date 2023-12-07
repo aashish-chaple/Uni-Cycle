@@ -5,41 +5,45 @@ export const AboutScreen = () => {
     return (
         <div className="AboutScreen">
         <div className="about_us">
-          {/* <h2>E-Pharm</h2> */}
+         
           <div className="mission">
-            <span>MISSION</span>
-            <p>
-              Our mission is to transport your medicines with high speed and good
+            <div style={{display:'flex',justifyContent:'center' }}><h2>MISSION</h2></div>
+            <h5>
+            Our mission is to transport your medicines with high speed and good
               quality.{" "}
-            </p>
+            </h5>
           </div>
-  
-          <span>About Us</span>
+          
+          <br></br>
+          
+          <h3>About Us</h3>
           <p>
-            We utilize our insight into the pharmaceutical business to ensure that
-            the majority of our magnificence items and medicines are results
-            driven, with the goal that we can offer brands that are ideal for
-            every person. ‘Organization Name’ pharmacy is a warm and well disposed
-            place, with experienced specialists giving proficient skincare
-            medicines, and magnificence exhortation in a quiet and loosening up
-            condition.
+            <h5>
+            Uni Cycle is an online store designed specifically for
+            university students. It’s a convenient platform where
+            students can buy and sell products within their own campus
+            community, making it easy to find what you need and sell
+            what you don’t. We’re here to help students save money, make
+            money, and connect with each other.
+            </h5>
           </p>
-  
-          <span>Motive</span>
+          
+          <br></br>
+
+          <h3>Motive</h3>
           <p>
-            E-Pharm offers one of a kind mix of pharmacy and magnificence facility
-            all over the world with numerous superlative wellbeing and excellent
-            medicines. Our services incorporate administering remedies, new drug
-            benefits, a gathering and conveyance work, glucose and cholesterol
-            checks, a stroll in movement facility, and a huge number of wellbeing
-            and excellence medicines and items.
+          <h5>
+          Uni Cycle, the dedicated online store tailored for university students, embodies a commitment to fostering a seamless and advantageous platform within the campus community. Its primary motive is to streamline the buying and selling experience for students, providing a convenient avenue for acquiring essential items and parting with unneeded possessions. By creating a marketplace within the university environment, Uni Cycle aims to facilitate a resourceful community where students can effortlessly save money on purchases, generate income through sales, and establish meaningful connections with their peers. The platform's overarching goal is to empower students by offering a practical solution to their diverse needs, ultimately enhancing their university experience.
+          </h5>
           </p>
-  
-          <span>OUR COMMITMENT</span>
+
+          <br></br>
+
+          <h3>OUR COMMITMENT</h3>
           <p>
-            Thank you for considering E-Pharm to provide your important medicine
-            requirements and logistics needs. Our vision and commitment to our
-            customers is to deliver best quality service and personal attention.
+            <h5>
+            At Uni Cycle, we are wholeheartedly committed to the vision of creating an unparalleled online marketplace exclusively for university students. Our pledge is to continually provide a user-friendly platform that prioritizes convenience, enabling students to effortlessly buy and sell within their campus community. We are dedicated to helping students save money, earn extra income, and forge meaningful connections. Uni Cycle is not just an online store; it's a commitment to enhancing the university experience by fostering a supportive and resourceful environment for every student.
+            </h5>
           </p>
         </div>
       </div>

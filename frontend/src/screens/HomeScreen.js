@@ -20,7 +20,7 @@ const HomeScreen = ({setid}) => {
   return (
     <div className="homescreen">
       <div className="container text-center">
-        <h1 className="mt-3">Diabetes</h1>
+        <h1 className="mt-3">Clothing</h1>
         <hr className="w-25 mx-auto" />
       </div>
       <div className="homescreen__products">
@@ -29,14 +29,14 @@ const HomeScreen = ({setid}) => {
         ) : error ? (
           <h2>{error}</h2>
         ) : (
-          products.map((product) => product.category === "Diabetes" && (
+          products.map((product) => product.category === "Clothing" && (
             <Product
               key={product._id}
               imgsrc={product.imgsrc}
               title={product.title}
-              indication={product.indication.length > 150 ? product.indication.slice(0, 150) + "..." : product.indication}
-              dosage={product.dosage}
-              sideEffects={product.sideEffects.length > 150 ? product.sideEffects.slice(0, 150) + "..." : product.sideEffects}
+              description={product.description.length > 150 ? product.description.slice(0, 150) + "..." : product.description}
+              location={product.location}
+              quantity={product.quantity}
               price={product.price}
               productId={product._id}
             />

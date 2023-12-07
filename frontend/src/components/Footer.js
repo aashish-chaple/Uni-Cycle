@@ -11,8 +11,8 @@ function Footer() {
                     <div className="col-sm-6 col-md-3 item">
                         <h3>Services</h3>
                         <ul>
-                            <li><NavLink exact to="#">Medicines</NavLink></li>
                             <li><NavLink exact to="#">Orders</NavLink></li>
+                            <li><NavLink exact to="#">Good products at affordable prices</NavLink></li>
                             <li><NavLink exact to="#">Hosting</NavLink></li>
                         </ul>
                     </div>
@@ -25,12 +25,14 @@ function Footer() {
                         </ul>
                     </div>
                     <div className="col-md-6 item text">
-                        <h3>E-pharmacy</h3>
-                        <p>Praesent sed lobortis mi. Suspendisse vel placerat ligula. Vivamus ac sem lacus. Ut vehicula rhoncus elementum. Etiam quis tristique lectus. Aliquam in arcu eget velit pulvinar dictum vel in justo.</p>
+                        <h3>Uni-Cycle</h3>
+                        <p>Uni Cycle is an online store designed specifically for
+                            university students. We’re here to help students save money, make
+                            money, and connect with each other.</p>
                     </div>
                    
                 </div>
-                <p className="copyright">E-pharmacy © 2022</p>
+                <p className="copyright">Uni-Cycle © 2022</p>
             </div>
         </footer>
     </div>

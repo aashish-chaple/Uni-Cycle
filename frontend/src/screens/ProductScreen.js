@@ -44,28 +44,28 @@ const ProductScreen = () => {
             </div>
             <div className="left__info">
               <p className="left__name">{product.title}</p>
-              <p> <span style={{fontWeight: "bold",fontSize:"14px"}}>Price:</span> ₹{product.price}</p>
-              <p ><span style={{fontWeight: "bold",fontSize:"14px"}}>Indiaction:</span> {product.indication}</p>
-              <p> <span style={{fontWeight: "bold",fontSize:"14px"}}>Dosage:</span> {product.indication}</p>
-              <p> <span style={{fontWeight: "bold",fontSize:"14px"}}>Side Effects:</span> {product.dosage}</p>
+              <p> <span style={{fontWeight: "bold",fontSize:"14px"}}>Price:</span> ${product.price}</p>
+              <p ><span style={{fontWeight: "bold",fontSize:"14px"}}>Description:</span> {product.description}</p>
+              <p> <span style={{fontWeight: "bold",fontSize:"14px"}}>Quantity:</span> {product.quantity}</p>
+              <p> <span style={{fontWeight: "bold",fontSize:"14px"}}>Location:</span> {product.location}</p>
             </div>
           </div>
           <div className="productscreen__right">
             <div className="right__info">
               <p>
                 Price:
-                <span>₹{product.price}</span>
+                <span>${product.price}</span>
               </p>
               <p>
                 Status:
                 <span>
-                  {product.countInStock > 0 ? "In Stock" : "Out of Stock"}
+                  {product.quantity > 0 ? "In Stock" : "Out of Stock"}
                 </span>
               </p>
               <p>
                 Qty
                 <select value={qty} onChange={(e) => setQty(e.target.value)}>
-                  {[...Array(product.countInStock).keys()].map((x) => (
+                  {[...Array(product.quantity).keys()].map((x) => (
                     <option key={x + 1} value={x + 1}>
                       {x + 1}
                     </option>

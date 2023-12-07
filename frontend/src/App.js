@@ -17,12 +17,13 @@ import MainScreen from "./screens/MainScreen";
 import ContactScreen from "./screens/ContactScreen";
 import AboutScreen from "./screens/AboutScreen";
 import AllProductsScreen from "./screens/AllProductsScreen";
-import DermotologyScreen from "./screens/DermotologyScreen";
-import DepressionScreen from "./screens/DepressionScreen";
-import DentalScreen from "./screens/DentalScreen";
+import FurnitureScreen from "./screens/FurnitureScreen";
+import ElectronicsScreen from "./screens/ElectronicsScreen";
+import StationaryScreen from "./screens/StationaryScreen";
+import MattressScreen from "./screens/MattressScreen";
 
-import FractureScreen from "./screens/FractureScreen";
-import WomensCareScreen from "./screens/WomensCareScreen";
+import ClothingScreen from "./screens/ClothingScreen";
+import KitchenScreen from "./screens/KitchenScreen";
 import AdminScreen from "./screens/AdminScreen";
 // import
 
@@ -51,11 +52,11 @@ function App(props) {
           <Route exact path="/allProducts" element={<AllProductsScreen/>} />
           <Route exact path="/product" element={<HomeScreen/>} />
           <Route exact path="/product/:id" element={<ProductScreen/>} />
-          <Route exact path="/products/dermatology" element={<DermotologyScreen/>}/>
-          <Route exact path="/products/depression" element={<DepressionScreen/>}/>
-          <Route exact path="/products/dental" element={<DentalScreen/>} />
-          <Route exact path="/products/fracture" element={<FractureScreen/>} />
-          <Route exact path="/products/womensCare"element={<WomensCareScreen/>}/>
+          <Route exact path="/products/furniture" element={<FurnitureScreen/>}/>
+          <Route exact path="/products/electronics" element={<ElectronicsScreen/>}/>
+          <Route exact path="/products/stationary" element={<StationaryScreen/>} />
+          <Route exact path="/products/kitchen" element={<KitchenScreen/>} />
+          <Route exact path="/products/mattress"element={<MattressScreen/>}/>
           <Route exact path="/about" element={<AboutScreen />} />
           <Route exact path="/contact" element={<ContactScreen/>} />
           <Route exact path="/admin" element={<AdminScreen setShowNav = {setShowNav}/>} />

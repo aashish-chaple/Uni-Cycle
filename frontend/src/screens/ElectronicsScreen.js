@@ -10,7 +10,7 @@ import Product from "../components/Product";
 import { getProducts as listProducts } from "../redux/actions/productActions";
 
 
-function DepressionScreen() {
+function ElectronicsScreen() {
 
   const dispatch = useDispatch();
 
@@ -34,14 +34,12 @@ function DepressionScreen() {
         ) : error ? (
           <h2>{error}</h2>
         ) : (
-          products.map((product) => product.category === "Depression" && (
+          products.map((product) => product.category === "Electronics" && (
             <Product
               key={product._id}
               imgsrc={product.imgsrc}
               title={product.title}
-              indication={product.indication}
-              dosage={product.dosage}
-              sideEffects={product.sideEffects}
+              description={product.description}
               price={product.price}
               productId={product._id}
             />
@@ -54,4 +52,4 @@ function DepressionScreen() {
     )
 }
 
-export default DepressionScreen
+export default ElectronicsScreen

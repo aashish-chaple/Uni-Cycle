@@ -2,7 +2,7 @@ import React from 'react';
 import caro1 from "../images/caro1.jpg";
 import caro2 from "../images/caro2.jpg";
 import caro3 from "../images/caro3.jpg";
-import caro4 from "../images/caro4.webp";
+import caro4 from "../images/caro4.jpg";
 import allProductsData from "../Data/allProductsData";
 import Card from "../components/Card";
 
@@ -13,23 +13,23 @@ function mainScreen({setShowNav}) {
         
         <div>
             <div className="container text-center ">
-                <h1 className="mt-3 "> Online Medicine Store</h1>
+                <h1 className="mt-3 ">For the students, By the Students</h1>
                 <hr className="w-50 mx-auto" />
             </div>
 
-            <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                    <img src={caro1} class="d-block w-100" alt="..."/>
+            <div id="carouselExampleFade" class="carousel slide carousel-fade" style={{height:'80%'}} data-bs-ride="carousel">
+                <div class="carousel-inner" style={{height:'80vh'}}>
+                    <div class="carousel-item active" style={{height:'100%'}}>
+                    <img src={caro1} class="d-block w-100 h-100" alt="..."/>
                     </div>
                     <div class="carousel-item">
-                    <img src={caro2} class="d-block w-100" alt="..."/>
+                    <img src={caro2} class="d-block w-100 h-100" alt="..."/>
                     </div>
                     <div class="carousel-item">
-                    <img src={caro3} class="d-block w-100" alt="..."/>
+                    <img src={caro3} class="d-block w-100 h-100" alt="..."/>
                     </div>
                     <div class="carousel-item">
-                    <img src={caro4} class="d-block w-100" alt="..."/>
+                    <img src={caro4} class="d-block w-100 h-100" alt="..."/>
                     </div>
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">

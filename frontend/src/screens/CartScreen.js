@@ -95,8 +95,7 @@ const CartScreen = () => {
         <div className="cartscreen__right">
           <div className="cartscreen__info">
             <p>Subtotal ({getCartCount()}) items</p>
-            <p>TOTAL(INR) : ₹{getCartSubTotal()} </p>
-            <p>TOTAL(USD) : ${getCartSubTotal() * 0.014} </p>
+            <p>TOTAL(USD) : ${getCartSubTotal()} </p>
           </div>
           <div>
             <button type="button" onClick={function() {

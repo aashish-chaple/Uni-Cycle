@@ -16,11 +16,11 @@ const Navbar = ({ click }) => {
   };
 
   return (
-    <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav className="navbar navbar-expand-lg " style={{backgroundColor:"#fef6e0"}}>
     
-      <Link to="/product" className="">
+      <Link to="/" className="">
         <span className="logo">
-          <img src={logo} style={{ height: "100px", width: "100px" }} alt="" />
+          <img src={logo} style={{ height: "100%", width: "80%" }} alt="" />
         </span>
 
       </Link>
@@ -28,30 +28,31 @@ const Navbar = ({ click }) => {
 
       <ul className="navbar__links">
 
-        <li>
+        {/* <li>
           <Link to="/" className="">
-            <span>
+            <span >
               Home
             </span>
           </Link>
-        </li>
+        </li> */}
         <li>
-          <Link to="/allProducts" className="">
-            <span>
+          <Link to="/allProducts" >
+            <span className="navbar-button">
               Products
             </span>
+            
           </Link>
         </li>
         <li>
           <Link to="/about" className="">
-            <span>
+            <span className="navbar-button">
               About Us
             </span>
           </Link>
         </li>
         <li>
           <Link to="/contact" className="">
-            <span>
+            <span className="navbar-button">
               Contact Us
             </span>
           </Link>

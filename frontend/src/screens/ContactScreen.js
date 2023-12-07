@@ -1,4 +1,5 @@
 import React, { useState} from 'react'
+import { Form } from 'react-router-dom';
 // import emailjs from "@emailjs/browser";
 
 function ContactScreen() {
@@ -56,11 +57,14 @@ function ContactScreen() {
     const PostData = async (e) => {
         e.preventDefault();
         const { fullName, email, message, city } = data;
+        alert("Message Sent Successfully")
+        var form = document.getElementById('form_data');
         const response = await fetch("/contact", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
             },
+
             body: JSON.stringify({
                 fullName, email, message, city
             })
